@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Campo para adicionar nome da categoria -->
+    <EditText
+        android:id="@+id/etCategoriaNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nome da Categoria"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Botão para adicionar categoria -->
+    <Button
+        android:id="@+id/btnAdicionarCategoria"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Categoria"
+        app:layout_constraintTop_toBottomOf="@id/etCategoriaNome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.8" />
+
+
+    <!-- Campo para adicionar nome do produto -->
+    <EditText
+        android:id="@+id/etProdutoNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Produto"
+        app:layout_constraintTop_toBottomOf="@id/btnAdicionarCategoria"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Campo para adicionar preço do produto -->
+    <EditText
+        android:id="@+id/etProdutoPreco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Preço do Produto"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/etProdutoNome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Spinner para selecionar categoria -->
+    <Spinner
+        android:id="@+id/spinnerCategoria"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etProdutoPreco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Botão para adicionar produto -->
+    <Button
+        android:id="@+id/btnAdicionarProduto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Produto"
+        app:layout_constraintTop_toBottomOf="@id/spinnerCategoria"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Botão para visualizar produtos -->
+    <Button
+        android:id="@+id/btnVerProdutos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ver Produtos"
+        app:layout_constraintTop_toBottomOf="@id/btnAdicionarProduto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#991AAF"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerProdutos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- RecyclerView para exibir produtos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewProdutos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/btnVerProdutos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

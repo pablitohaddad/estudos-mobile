@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- CORES PRIMARIAS -->
+    <!-- PRIMARY BRAND COLOR -->
+    <color name="backgroundApp">#61656b</color>
+    <color name="backroundLottie">#E7B549</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- CORES SECUNDARIAS -->
+
+    <!-- COR DA BARRA DE STATUS -->
+    <!-- STATUS COLOR BAR  -->
+    <!-- VARIANTE DA COR PRIMARIA  -->
+    <!-- colorPrimaryVariant  -->
+</resources>
